@@ -1,158 +1,325 @@
-* {
+body {
     margin: 0;
-    padding: 0;
+    padding: 0%;
+    background-color: #151515;
 
 }
 
-
-.header {
-    width: 100%;
-    height: 90vh;
+header {
+    background-color: blue;
     background-image: url(Imagens/Base\ Header.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.imagem-header {
-    width: 80px;
-    height: 80px;
-}
-
-.cabecalho {
-    max-width: 70vw;
-    margin: 0 auto;
-
-}
-
-.cabecalho h1 {
-    color: #FFF;
-    font-size: 25px;
-    padding-left: 10px;
-
-}
-
-.navbar-nav {
-    justify-content: end;
+    background-position: center;
     width: 100%;
-}
-.navbar-nav{
-    font-size: 150%;
-    font-weight: 200;
+    height: 80vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/*Começo do banner*/
-.banner {
+header img {
+    width: 80px;
+    aspect-ratio: 1;
+
+}
+
+.navbar-collapse {
+    justify-content: right;
+    font-size: 25px;
+    font-weight: 300;
+
+}
+
+.conteudoHeader {
     text-align: center;
-    color: #FFF;
-    max-width: 40%;
-    height: 60%;
-    margin: 0 auto;
+    color: aliceblue;
+    width: 100%;
+    height: 60vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+.conteudoHeader a {
+    background-color: #1552F0;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: aliceblue;
+    margin: 60px 0 30px 0;
+}
+
+.conteudoHeader h2 {
+    font-size: 20px;
+    width: 50%;
+    opacity: 80%;
+}
+
+@media (max-width:991px) {
+    .conteudoHeader h2 {
+        width: 80%;
+    }
+}
+
+
+.transforme-se {
+    width: 100%;
+    height: 70vh;
+    background-color: #151515;
+    color: aliceblue;
+    display: flex;
+}
+
+.tras-image {
+    width: 50%;
+    height: 100%;
+    background-color: #1552F0;
+    background-image: url(Imagens/Homem\ levantando\ peso.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo {
+    width: 50%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.conteudo a {
+    font-size: 25px;
+    color: aliceblue;
+    background-color: #1552F0;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.conteudo h2 {
+    font-size: 55px;
+    margin-bottom: 100px;
+
+}
+
+.conteudo p {
+    font-size: 20px;
+    opacity: 80%;
+}
+
+@media (max-width:900px) {
+    .transforme-se {
+        display: block;
+        height: 100vh;
+        background-color: #151515;
+    }
+
+    .tras-image {
+        width: 100%;
+        height: 40%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+
+    .conteudo {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center
+    }
+
+    .conteudo a {
+        width: 50%;
+    }
+
+}
+
+@media (max-width:580px) {
+    .conteudo h2 {
+        font-size: 40px
+    }
+
+    .conteudo a {
+        font-size: 20px;
+        width: 90%;
+    }
+
+}
+
+
+.faixa-azul {
+    background-color: #1552F0;
+    color: aliceblue;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 
 }
 
-.banner a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 60px;
+.faixa-azul a {
+    color: aliceblue;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: #ffffffa9 solid 2px;
     border-radius: 10px;
-    border: none;
-    font-size: 150%;
-    color: #FFF;
-    background-color: #1552F0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-
-
-}
-
-.banner h2 {
     font-size: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+    text-decoration: none;
 }
-/*Responsividade*/
-@media (min-width:1000px) {
-    .banner{
-        width: 100%;
+
+.faixa-azul h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width:900px) {
+    .faixa-azul{
+        display: flex;
+    
+    flex-direction: column;
+    height: 150px;
+    gap: 5px;
     }
 }
 
-/*Fim do banner*/
-
-/*Começo da segunda section*/
-.sec1{
-    padding-top: 70px;
-    width: 100%;
-    height: 80vh;
+/*Começo da section especialidades*/
+.especialidades {
     background-color: #151515;
-    display: flex;
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+
 }
-.imagem{
-    width: 50%;
-    height: 100%;
-    background-image:url(Imagens/imagem\ crossfit.png) ;
+
+.titulo {
+    text-align: center;
+    margin-top: 130px;
 }
-.conteudo{
+
+.titulo p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cardEspecialidades {
+    width: 100%;
+    height: 500px;
     color: #fff;
-    width: 30%;
+    text-align: left;
+    display: flex;
+    margin-top: 100px;
+
+}
+
+.cardImagem {
+    background-color: rgb(25, 25, 214);
     height: 100%;
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.conteudo1 {
     display: flex;
     flex-direction: column;
-justify-content: center;
-padding-left: 20px;
-}
-.conteudo h2{
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
-.conteudo a{
-    background-color: #1552F0;
-    border-radius: 10px;
-    color: #FFF;
-    font-size: 140%;
-    width: 350px;
-    height: 50px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;justify-content: center;
-}
-.conteudo p{
-    font-size: calc(100%*1.5);
-    font-weight: 400;
-}
-/*Fim da segunda section*/
-/*Começo da faixa azul*/
-.faixa-azul{
-    background-color: #0D5190;
+    padding: 30px;
     width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    gap: 50px;
+
 }
-.faixa-azul h2{
-    font-weight: 300;
+
+.tituloCard {
+    width: 300px;
+
 }
-.faixa-azul a{
-    background-color: transparent;
-    border: #fff 2px solid;
-    padding:7px 20px;
+
+.tituloCard>div {
+    width: 100%;
+    height: 8px;
     border-radius: 10px;
-    color: #FFF;
-    font-size: calc(100%*1.5);
-    text-decoration: none;
-
+    background-color: #1552F0;
+    margin-bottom: 15%;
 }
 
-/*Fim da faixa azul*/
+.conteudo1 h1 {
+    font-size: 50px;
+}
+
+.conteudo1 p {
+    font-size: 25px;
+    width: 80%;
+}
+
+.conteudo1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    background-color: #1552F0;
+    width: 200px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+.cardImageme {
+    display: none;
+}
+
+.pc{
+    display: none !important;
+}
+.cell{
+    display: block !important;
+    border-radius: 0;
+    border-radius: 20px 0 0 20px ;
+}
+
+@media (max-width:900px) {
+    .cardEspecialidades {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .cardImagem {
+        height: 350px;
+        width: 100%;
+        border-radius: 0;
+
+
+    }
+
+  
+
+    .tituloCard {
+        margin: 0 auto;
+    }
+
+    .cardEspecialidades p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cardEspecialidades a {
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .pc{
+        display: block !important;
+    }
+    .cell{
+        display: none !important;
+    }
+  
+}
 
