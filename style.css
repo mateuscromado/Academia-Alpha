@@ -9,6 +9,8 @@ header {
     background-color: blue;
     background-image: url(Imagens/Base\ Header.png);
     background-position: center;
+
+
     width: 100%;
     height: 80vh;
     font-family: 'Montserrat', sans-serif;
@@ -59,7 +61,41 @@ header img {
     .conteudoHeader h2 {
         width: 80%;
     }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        background-color: #001d66ca;
+        font-size: 15px;
+    }
 }
+
+@media (max-width:430px) {
+
+    .navbar-brand {
+        font-size: 15px;
+    }
+
+    .navbar-brand img {
+        width: 35px;
+    }
+    .conteudoHeader h1{
+        font-size:25px;
+        width: 100%;
+    }
+
+    .conteudoHeader h2{
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+
+
+
+
 
 
 .transforme-se {
@@ -151,6 +187,25 @@ header img {
 
 }
 
+@media (max-width:430px) {
+    .conteudo h2{
+        font-size: 30px;
+        width: 100%;
+
+    }
+
+    .conteudo p{
+        font-size: 15px;
+        width: 100%;
+    }
+    .conteudo a{
+        width: 100% ;
+        font-size: 18px;
+        font-weight: 600;  
+    
+    }
+}
+
 
 .faixa-azul {
     background-color: #1552F0;
@@ -182,12 +237,19 @@ header img {
 }
 
 @media (max-width:900px) {
-    .faixa-azul{
+    .faixa-azul {
         display: flex;
-    
-    flex-direction: column;
-    height: 150px;
-    gap: 5px;
+
+        flex-direction: column;
+        height: 150px;
+        gap: 5px;
+    }
+}
+
+@media (max-width:430px) {
+    .faixa-azul h3{
+        font-size: 15px;
+        text-align: center;
     }
 }
 
@@ -273,13 +335,14 @@ header img {
     display: none;
 }
 
-.pc{
+.pc {
     display: none !important;
 }
-.cell{
+
+.cell {
     display: block !important;
     border-radius: 0;
-    border-radius: 20px 0 0 20px ;
+    border-radius: 20px 0 0 20px;
 }
 
 @media (max-width:900px) {
@@ -291,12 +354,36 @@ header img {
     .cardImagem {
         height: 350px;
         width: 100%;
+
+
         border-radius: 0;
 
 
     }
 
-  
+    @media (max-width:430px) {
+        .titulo h1{
+            font-size: 30px;
+        }
+        .titulo p{
+            font-size: 15px;
+            width: 100%;
+
+        }
+        .tituloCard h1{
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+        }
+        .tituloCard{
+            width: 100%;
+        }
+        .conteudo1 p {
+            font-size: 20px;
+        }
+    }
+
+
 
     .tituloCard {
         margin: 0 auto;
@@ -314,12 +401,30 @@ header img {
         margin-top: 100px;
     }
 
-    .pc{
+    .pc {
         display: block !important;
     }
-    .cell{
+
+    .cell {
         display: none !important;
     }
-  
-}
 
+    .conteudo1{
+        padding: 0;
+        width: 100%;
+
+
+    }
+
+    .tituloCard> div{
+        width: 70%;
+        height: 5px;
+        margin: 010px auto;
+    }
+
+    .conteudo1 a{
+        width: 80%;
+        font-size: 20px;
+    }
+
+}
